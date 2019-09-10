@@ -105,7 +105,7 @@ dict_to_csv["Greatest Decrease in Profits"] = baddestChange
 write_file = os.path.join("output.csv")
 
 for key in dict_to_csv:
-    print(key + " " + str(dict_to_csv[key]))
+    print(key + ": " + str(dict_to_csv[key]))
 
 with open(write_file, "w", newline = '') as newfile:
     csvwriter = csv.writer(newfile)
